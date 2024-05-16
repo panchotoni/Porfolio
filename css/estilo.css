@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Roboto", sans-serif; 
+}
+body{
+    background-color: white;
+    min-width: 700px;
+}
+.indexNav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    border-bottom: solid black 2px;
+    
+}
+.logo img{
+    width: 60px;
+    padding-left: 15px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    padding-right: 3%;
+}
+.link{
+    color: black;
+    text-decoration: none;
+    padding: 0.7rem;
+}
+.link:hover{
+    background-color: rgb(13, 110, 253);
+    color: white;
+    border-radius: 10px;
+}
+.indexMain{
+    width: 80%;
+    height: 75vh;
+}
+.section1{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13%;
+    margin-left: 10%;
+}
+.indexTexto{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.imagen2{
+    width: 600px;
+}
+
+footer{
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    align-items: center;
+    padding: 25px;
+    color: rgb(115, 115, 115);
+    font-weight: 300;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* SOBRE MI */
+.containerMain {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 2.3fr 1fr 1fr 0.2fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . . ."
+      ". artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 ."
+      ". artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 ."
+      ". . . . . . . . ."
+      ". . Section1 Section1 . Section2 Section2 . ."
+      ". . Section1 Section1 . Section2 Section2 . ."
+      ". . . . . . . . ."
+      ". . Section3 Section3 . Section4 Section4 . ."
+      ". . Section3 Section3 . Section4 Section4 . ."
+      ". . . . . . . . .";
+  }
+  
+  
+  .artiucloPrincipal1 { 
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    grid-area: artiucloPrincipal1; 
+}
+  
+.textoArt{
+  width: 650px;
+  padding-top: 15px;
+}
+.pprincipal{
+  padding: 10px;
+  text-align: start;
+}
+
+.imagenYo {
+  width: 250px;
+}
+
+  .Section1 { 
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    grid-area: Section1; 
+    font-weight: 300;
+}
+  
+  .Section2 { 
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    grid-area: Section2;
+    font-weight: 300;
+    
+}
+  
+  .Section3 { 
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    grid-area: Section3; 
+    font-weight: 300;
+    
+}
+  
+  .Section4 { 
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    grid-area: Section4; 
+    font-weight: 300;
+}
+
+.cardText{
+    font-weight: 400;
+}
+
+.cardsLabel {
+    display: flex;
+    gap: 7px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.tags{
+    background: rgb(189, 217, 243);
+    border-radius: 11%;
+    padding: 2px;
+}
+/* CONTACTAME */
+.contactNav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    align-items: center;
+    border-bottom: solid black 2px;
+    height: 65px;
+    padding-top: 17px;
+    padding-left: 40.5px;
+}
+
+.contactLogo img{
+    height: 60px;
+    width: 75px;
+    padding-left: 15px;
+    margin-left: 70px;
+    margin-top: -20px;
+}
+
+.containerContactame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 75px;
+    max-width: 90%;
+    margin: 100PX auto;
+    
+    height: 100%;
+
+}
+.titleContactame {
+    text-align: center;
+    margin-left: -85px;
+}
+
+.sectionText {
+    max-width: 250px;
+}
+
+.contactIcons {
+    display: flex;
+    max-width: 90%;
+    width: 300px;
+    gap: 5px;
+}
+
+.iconsImg{
+    width: 50px;
+}
+.twitterIcon{
+    width: 55px;
+}
+
+.contactameForm{
+    width: 100%;
+   
+}
+
+.buttonForm {
+    background-color: rgb(55, 127, 202);
+}
+
+/* EDUCACION */
+.tituloEdu{
+    margin: 60px; /* Agrega un margen en la parte superior del título */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.educacionSec {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+hr{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.educacionArt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    margin: 65px;
+}
+.educacionArt h2 {
+    margin-bottom: 10px; /* Añade un margen inferior al h2 */
+}
+
+.eduLogos{
+    max-width: 200px; /* Establece el ancho máximo */
+    height: auto; /* Permite que la altura se ajuste proporcionalmente */
+    display: block; /* Asegura que las imágenes se muestren como bloques */
+    margin: 0 auto; 
+}
+/* EXPERIENCIA LABORAL*/
+.tituloXp{
+    margin-top: 60px; /* Agrega un margen en la parte superior del título */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.imagenesXp {
+    display: flex; /* Utiliza flexbox para alinear las imágenes */
+    flex-direction: row;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    margin: 85px;
+}
+
+.imagenesXp img {
+    max-width: 350px; /* Establece el ancho máximo */
+    height: auto; /* Permite que la altura se ajuste proporcionalmente */
+    display: block; /* Asegura que las imágenes se muestren como bloques */
+    margin: 0 auto; /* Centra horizontalmente las imágenes */
+}
+
+.textXp {
+    margin-top: 20px; 
+    text-align: justify;
+    max-width: 800px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.textXp p {
+    margin-bottom: 20px;
+}
+
+@media  (max-width: 768px) {
+    .indexNav{
+        gap: 5px;
+    }
+    .menu{
+        padding-right: 1%
+    }
+    .indexMain{
+        width: 100%;
+        height: 75vh;
+    }
+    .section1{
+        flex-direction: column-reverse;
+        gap: 75px;
+        margin-left: -20px;
+    }
+    footer{
+        justify-content: center;
+    }
+    /* ABOUT ME MEDIA */
+    .containerMain {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr 0.2fr 1fr 1fr 0.0fr 1fr 1fr 0.3fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . ."
+          " artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 "
+          " artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 "
+          ". . ."
+          ". Section1 ."
+          ". Section2 ."
+          ". . ."
+          ". Section3 ."
+          ". Section4 ."
+          ". . . ";
+      }
+      
+
+      .artiucloPrincipal1 { 
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        grid-area: artiucloPrincipal1; 
+    }
+}
