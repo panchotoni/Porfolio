@@ -1,355 +1,381 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-    font-family: "Roboto", sans-serif; 
-}
-body{
-    background-color: white;
-    min-width: 700px;
-}
-.indexNav{
-    width: 100%;
-    margin: 0 auto;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    align-items: center;
-    border-bottom: solid black 2px;
-    
-}
-.logo img{
-    width: 60px;
-    padding-left: 15px;
-}
-.menu{
-    list-style: none;
-    display: flex;
-    padding-right: 3%;
-}
-.link{
-    color: black;
-    text-decoration: none;
-    padding: 0.7rem;
-}
-.link:hover{
-    background-color: rgb(13, 110, 253);
-    color: white;
-    border-radius: 10px;
-}
-.indexMain{
-    width: 80%;
-    height: 75vh;
-}
-.section1{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    margin-top: 13%;
-    margin-left: 10%;
-}
-.indexTexto{
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-}
-.imagen2{
-    width: 600px;
+@charset "UTF-8";
+body {
+  background-color: white;
+  min-width: 700px;
 }
 
-footer{
-    display: flex;
-    gap: 15px;
-    justify-content: end;
-    align-items: center;
-    padding: 25px;
-    color: rgb(115, 115, 115);
-    font-weight: 300;
-
+.indexNav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  border-bottom: solid black 2px;
+}
+.indexNav .logo img {
+  width: 60px;
+  padding-left: 15px;
+}
+.indexNav .menu {
+  list-style: none;
+  display: flex;
+  padding-right: 3%;
+}
+.indexNav .menu .link {
+  color: black;
+  text-decoration: none;
+  padding: 0.7rem;
+}
+.indexNav .menu .link:hover {
+  background-color: rgb(13, 110, 253);
+  color: white;
+  border-radius: 10px;
+}
+.indexNav .menu .link a {
+  text-decoration: none;
 }
 
-a {
-    text-decoration: none;
+.indexMain {
+  width: 80%;
+  height: 75vh;
+}
+.indexMain .section1 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13%;
+  margin-left: 10%;
+}
+.indexMain .section1 .indexTexto {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.indexMain .section1 .imagen2 {
+  width: 600px;
 }
 
-/* SOBRE MI */
-.containerMain {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 2.3fr 1fr 1fr 0.2fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . . . . ."
-      ". artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 ."
-      ". artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 ."
-      ". . . . . . . . ."
-      ". . Section1 Section1 . Section2 Section2 . ."
-      ". . Section1 Section1 . Section2 Section2 . ."
-      ". . . . . . . . ."
-      ". . Section3 Section3 . Section4 Section4 . ."
-      ". . Section3 Section3 . Section4 Section4 . ."
-      ". . . . . . . . .";
-  }
-  
-  
-  .artiucloPrincipal1 { 
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: row-reverse;
-    grid-area: artiucloPrincipal1; 
+footer {
+  display: flex;
+  gap: 15px;
+  justify-content: end;
+  align-items: center;
+  padding: 25px;
+  color: rgb(115, 115, 115);
+  font-weight: 300;
 }
-  
-.textoArt{
+
+.containerMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 2.3fr 1fr 1fr 0.2fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . . ." ". artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 ." ". artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 ." ". . . . . . . . ." ". . Section1 Section1 . Section2 Section2 . ." ". . Section1 Section1 . Section2 Section2 . ." ". . . . . . . . ." ". . Section3 Section3 . Section4 Section4 . ." ". . Section3 Section3 . Section4 Section4 . ." ". . . . . . . . .";
+}
+.containerMain .artiucloPrincipal1 {
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  grid-area: artiucloPrincipal1;
+}
+.containerMain .artiucloPrincipal1 .textoArt {
   width: 650px;
   padding-top: 15px;
 }
-.pprincipal{
+.containerMain .artiucloPrincipal1 .pprincipal {
   padding: 10px;
   text-align: start;
 }
-
-.imagenYo {
+.containerMain .artiucloPrincipal1 .imagenYo {
   width: 250px;
 }
-
-  .Section1 { 
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    grid-area: Section1; 
-    font-weight: 300;
+.containerMain .Section1, .containerMain .Section2, .containerMain .Section3, .containerMain .Section4 {
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
 }
-  
-  .Section2 { 
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    grid-area: Section2;
-    font-weight: 300;
-    
+.containerMain .Section1:nth-of-type(1), .containerMain .Section2:nth-of-type(1), .containerMain .Section3:nth-of-type(1), .containerMain .Section4:nth-of-type(1) {
+  grid-area: Section1;
 }
-  
-  .Section3 { 
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    grid-area: Section3; 
-    font-weight: 300;
-    
+.containerMain .Section1:nth-of-type(2), .containerMain .Section2:nth-of-type(2), .containerMain .Section3:nth-of-type(2), .containerMain .Section4:nth-of-type(2) {
+  grid-area: Section2;
 }
-  
-  .Section4 { 
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    grid-area: Section4; 
-    font-weight: 300;
+.containerMain .Section1:nth-of-type(3), .containerMain .Section2:nth-of-type(3), .containerMain .Section3:nth-of-type(3), .containerMain .Section4:nth-of-type(3) {
+  grid-area: Section3;
 }
-
-.cardText{
-    font-weight: 400;
+.containerMain .Section1:nth-of-type(4), .containerMain .Section2:nth-of-type(4), .containerMain .Section3:nth-of-type(4), .containerMain .Section4:nth-of-type(4) {
+  grid-area: Section4;
 }
-
-.cardsLabel {
-    display: flex;
-    gap: 7px;
-    margin-top: 15px;
-    font-size: 13px;
+.containerMain .Section1 .cardText, .containerMain .Section2 .cardText, .containerMain .Section3 .cardText, .containerMain .Section4 .cardText {
+  font-weight: 400;
+}
+.containerMain .Section1 .cardImage, .containerMain .Section2 .cardImage, .containerMain .Section3 .cardImage, .containerMain .Section4 .cardImage {
+  transition: all 0.5s;
+}
+.containerMain .Section1 .cardImage:hover, .containerMain .Section2 .cardImage:hover, .containerMain .Section3 .cardImage:hover, .containerMain .Section4 .cardImage:hover {
+  transform: scale(1.1, 1.1);
+}
+.containerMain .Section1 .cardsLabel, .containerMain .Section2 .cardsLabel, .containerMain .Section3 .cardsLabel, .containerMain .Section4 .cardsLabel {
+  display: flex;
+  gap: 7px;
+  margin-top: 15px;
+  font-size: 13px;
+}
+.containerMain .Section1 .cardsLabel .tags, .containerMain .Section2 .cardsLabel .tags, .containerMain .Section3 .cardsLabel .tags, .containerMain .Section4 .cardsLabel .tags {
+  background: rgb(189, 217, 243);
+  border-radius: 11%;
+  padding: 2px;
+  transition: all 0.5s;
+}
+.containerMain .Section1 .cardsLabel .tags:hover, .containerMain .Section2 .cardsLabel .tags:hover, .containerMain .Section3 .cardsLabel .tags:hover, .containerMain .Section4 .cardsLabel .tags:hover {
+  transform: scale(1.1, 1.1);
 }
 
-.tags{
-    background: rgb(189, 217, 243);
-    border-radius: 11%;
-    padding: 2px;
-}
-/* CONTACTAME */
-.contactNav{
-    width: 100%;
-    margin: 0 auto;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    gap: 65px;
-    align-items: center;
-    border-bottom: solid black 2px;
-    height: 65px;
-    padding-top: 17px;
-    padding-left: 40.5px;
-}
-
-.contactLogo img{
-    height: 60px;
-    width: 75px;
-    padding-left: 15px;
-    margin-left: 70px;
-    margin-top: -20px;
-}
-
-.containerContactame{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 75px;
-    max-width: 90%;
-    margin: 100PX auto;
-    
-    height: 100%;
-
-}
-.titleContactame {
-    text-align: center;
-    margin-left: -85px;
-}
-
-.sectionText {
-    max-width: 250px;
-}
-
-.contactIcons {
-    display: flex;
-    max-width: 90%;
-    width: 300px;
-    gap: 5px;
-}
-
-.iconsImg{
-    width: 50px;
-}
-.twitterIcon{
-    width: 55px;
-}
-
-.contactameForm{
-    width: 100%;
-   
-}
-
-.buttonForm {
-    background-color: rgb(55, 127, 202);
-}
-
-/* EDUCACION */
-.tituloEdu{
-    margin: 60px; /* Agrega un margen en la parte superior del título */
-    text-align: center; /* Centra el texto horizontalmente */
+.tituloEdu {
+  margin: 60px;
+  text-align: center;
 }
 
 .educacionSec {
-    max-width: 70%;
-    margin: 0 auto;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
-hr{
-    max-width: 90%;
-    margin: 0 auto;
+hr {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-.educacionArt{
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center; /* Centra las imágenes verticalmente */
-    margin: 65px;
+.educacionArt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 65px;
 }
 .educacionArt h2 {
-    margin-bottom: 10px; /* Añade un margen inferior al h2 */
+  margin-bottom: 10px;
 }
 
-.eduLogos{
-    max-width: 200px; /* Establece el ancho máximo */
-    height: auto; /* Permite que la altura se ajuste proporcionalmente */
-    display: block; /* Asegura que las imágenes se muestren como bloques */
-    margin: 0 auto; 
+.eduLogos {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.5s;
 }
-/* EXPERIENCIA LABORAL*/
-.tituloXp{
-    margin-top: 60px; /* Agrega un margen en la parte superior del título */
-    text-align: center; /* Centra el texto horizontalmente */
+.eduLogos:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* EXPERIENCIA */
+.tituloXp {
+  margin-top: 60px; /* Agrega un margen en la parte superior del título */
+  text-align: center; /* Centra el texto horizontalmente */
 }
 
 .imagenesXp {
-    display: flex; /* Utiliza flexbox para alinear las imágenes */
-    flex-direction: row;
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center; /* Centra las imágenes verticalmente */
-    margin: 85px;
+  display: flex; /* Utiliza flexbox para alinear las imágenes */
+  flex-direction: row;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Centra las imágenes verticalmente */
+  margin: 85px;
 }
-
 .imagenesXp img {
-    max-width: 350px; /* Establece el ancho máximo */
-    height: auto; /* Permite que la altura se ajuste proporcionalmente */
-    display: block; /* Asegura que las imágenes se muestren como bloques */
-    margin: 0 auto; /* Centra horizontalmente las imágenes */
+  max-width: 350px; /* Establece el ancho máximo */
+  height: auto; /* Permite que la altura se ajuste proporcionalmente */
+  display: block; /* Asegura que las imágenes se muestren como bloques */
+  margin: 0 auto; /* Centra horizontalmente las imágenes */
+  transition: all 0.2s;
+}
+.imagenesXp img:hover {
+  transform: scale(1.5, 1.5);
 }
 
 .textXp {
-    margin-top: 20px; 
-    text-align: justify;
-    max-width: 800px;
-    margin-left: auto; 
-    margin-right: auto;
+  margin-top: 20px;
+  text-align: justify;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .textXp p {
+  margin-bottom: 20px;
+}
+
+/* CONTACTAME */
+.contactNav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  align-items: center;
+  border-bottom: solid black 2px;
+  height: 65px;
+  padding-top: 17px;
+  padding-left: 40.5px;
+}
+.contactNav .contactImg {
+  height: 60px;
+  width: 75px;
+  padding-left: 15px;
+  margin-left: 70px;
+  margin-top: -20px;
+}
+.contactNav .menu {
+  list-style: none;
+  display: flex;
+  padding-right: 3%;
+}
+.contactNav .menu .link {
+  color: black;
+  text-decoration: none;
+  padding: 0.7rem;
+}
+.contactNav .menu .link:hover {
+  background-color: rgb(13, 110, 253);
+  color: white;
+  border-radius: 10px;
+}
+.contactNav .menu .link a {
+  text-decoration: none;
+}
+
+.containerContactame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 75px;
+  max-width: 90%;
+  margin: 100PX auto;
+  height: 100%;
+}
+
+.titleContactame {
+  text-align: center;
+  margin-left: -85px;
+}
+
+.sectionText {
+  max-width: 250px;
+}
+
+.contactIcons {
+  display: flex;
+  max-width: 90%;
+  width: 300px;
+  gap: 5px;
+}
+
+.iconsImg {
+  width: 50px;
+}
+
+.twitterIcon {
+  width: 55px;
+}
+
+.contactameForm {
+  width: 100%;
+}
+
+.buttonForm {
+  background-color: rgb(55, 127, 202);
+}
+
+/* MEDIA QUERIES*/
+@media (max-width: 768px) {
+  .indexNav {
+    gap: 5px;
+  }
+  .indexNav .menu {
+    padding-right: 1%;
+  }
+  .contactNav {
+    gap: 5px;
+  }
+  .contactNav .menu {
+    padding-right: 1%;
+  }
+  .indexMain {
+    width: 100%;
+    height: 75vh;
+  }
+  .indexMain .section1 {
+    flex-direction: column-reverse;
+    gap: 75px;
+    margin-left: -20px;
+  }
+  footer {
+    justify-content: center;
+  }
+  /* ABOUT ME MEDIA */
+  .containerMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 0.2fr 1fr 1fr 0fr 1fr 1fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . ." " artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 " " artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 " ". . ." ". Section1 ." ". Section2 ." ". . ." ". Section3 ." ". Section4 ." ". . . ";
+  }
+  .artiucloPrincipal1 {
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    grid-area: artiucloPrincipal1;
+  }
+  /*EDUCACION*/
+  .educacionSec {
+    max-width: 90%;
+  }
+  hr {
+    max-width: 80%;
+  }
+  .educacionArt {
+    margin: 50px;
+  }
+  /* EXPERIENCIA */
+  .imagenesXp {
+    flex-direction: column;
+  }
+  .imagenesXp img {
+    max-width: 250px; /* Establece el ancho máximo */
+  }
+  .imagenesXp img:hover {
+    transform: scale(1, 1);
+  }
+  .textXp {
+    margin-top: 20px;
+    text-align: justify;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .textXp p {
     margin-bottom: 20px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-@media  (max-width: 768px) {
-    .indexNav{
-        gap: 5px;
-    }
-    .menu{
-        padding-right: 1%
-    }
-    .indexMain{
-        width: 100%;
-        height: 75vh;
-    }
-    .section1{
-        flex-direction: column-reverse;
-        gap: 75px;
-        margin-left: -20px;
-    }
-    footer{
-        justify-content: center;
-    }
-    /* ABOUT ME MEDIA */
-    .containerMain {  
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.3fr 1fr 1fr 0.2fr 1fr 1fr 0.0fr 1fr 1fr 0.3fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          ". . ."
-          " artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 "
-          " artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 "
-          ". . ."
-          ". Section1 ."
-          ". Section2 ."
-          ". . ."
-          ". Section3 ."
-          ". Section4 ."
-          ". . . ";
-      }
-      
-
-      .artiucloPrincipal1 { 
-        justify-content: center;
-        align-items: center;
-        max-width: 90%;
-        margin: 0 auto;
-        text-align: center;
-        display: flex;
-        flex-direction: column-reverse;
-        grid-area: artiucloPrincipal1; 
-    }
-}
+/*# sourceMappingURL=estilo.css.map */

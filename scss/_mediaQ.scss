@@ -1,0 +1,107 @@
+/* MEDIA QUERIES*/
+@media (max-width: 768px) {
+    .indexNav {
+        gap: 5px;
+
+        .menu {
+            padding-right: 1%;
+        }
+    }
+    .contactNav {
+        gap: 5px;
+
+        .menu {
+            padding-right: 1%;
+        }
+    }
+
+    .indexMain {
+        width: 100%;
+        height: 75vh;
+
+        .section1 {
+            flex-direction: column-reverse;
+            gap: 75px;
+            margin-left: -20px;
+        }
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    /* ABOUT ME MEDIA */
+    .containerMain {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr 0.2fr 1fr 1fr 0.0fr 1fr 1fr 0.3fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . ."
+          " artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 "
+          " artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 "
+          ". . ."
+          ". Section1 ."
+          ". Section2 ."
+          ". . ."
+          ". Section3 ."
+          ". Section4 ."
+          ". . . ";
+    }
+
+    .artiucloPrincipal1 { 
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        grid-area: artiucloPrincipal1; 
+    }
+
+    /*EDUCACION*/
+
+    .educacionSec {
+        max-width: 90%;
+    }
+    
+    hr {
+        max-width: 80%;
+    }
+    
+    .educacionArt {
+        margin: 50px;
+    }
+    
+    /* EXPERIENCIA */
+
+    
+    
+    .imagenesXp {
+        flex-direction: column;
+
+        img {
+            max-width: 250px; /* Establece el ancho máximo */
+
+            &:hover{
+                transform: scale(1, 1);
+            }
+        }
+    }
+    
+    .textXp {
+        margin-top: 20px; 
+        text-align: justify;
+        max-width: 80%;
+        margin-left: auto; 
+        margin-right: auto;
+    
+        p{
+            margin-bottom: 20px;
+        }
+    }
+
+   
+}

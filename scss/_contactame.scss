@@ -1,0 +1,89 @@
+/* CONTACTAME */
+
+.contactNav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    align-items: center;
+    border-bottom: solid black 2px;
+    height: 65px;
+    padding-top: 17px;
+    padding-left: 40.5px;
+
+        .contactImg {
+            height: 60px;
+            width: 75px;
+            padding-left: 15px;
+            margin-left: 70px;
+            margin-top: -20px;
+        }
+    
+
+    .menu {
+        list-style: none;
+        display: flex;
+        padding-right: 3%;
+
+        .link{
+            color: black;
+            text-decoration: none;
+            padding: 0.7rem;
+
+            &:hover {
+                background-color: rgb(13, 110, 253);
+                color: white;
+                border-radius: 10px;
+            }
+
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.containerContactame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 75px;
+    max-width: 90%;
+    margin: 100PX auto;
+    
+    height: 100%;
+
+}
+.titleContactame {
+    text-align: center;
+    margin-left: -85px;
+}
+
+.sectionText {
+    max-width: 250px;
+}
+
+.contactIcons {
+    display: flex;
+    max-width: 90%;
+    width: 300px;
+    gap: 5px;
+}
+
+.iconsImg{
+    width: 50px;
+}
+.twitterIcon{
+    width: 55px;
+}
+
+.contactameForm{
+    width: 100%;
+   
+}
+
+.buttonForm {
+    background-color: rgb(55, 127, 202);
+}

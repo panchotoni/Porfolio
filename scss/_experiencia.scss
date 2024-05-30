@@ -1,0 +1,38 @@
+/* EXPERIENCIA */
+
+.tituloXp{
+    margin-top: 60px; /* Agrega un margen en la parte superior del título */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.imagenesXp {
+    display: flex; /* Utiliza flexbox para alinear las imágenes */
+    flex-direction: row;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    margin: 85px;
+
+    img {
+        max-width: 350px; /* Establece el ancho máximo */
+        height: auto; /* Permite que la altura se ajuste proporcionalmente */
+        display: block; /* Asegura que las imágenes se muestren como bloques */
+        margin: 0 auto; /* Centra horizontalmente las imágenes */
+        transition: all 0.2s;
+
+        &:hover{
+            transform: scale(1.5, 1.5);
+        }
+    }
+}
+
+.textXp {
+    margin-top: 20px; 
+    text-align: justify;
+    max-width: 800px;
+    margin-left: auto; 
+    margin-right: auto;
+
+    p{
+        margin-bottom: 20px;
+    }
+}

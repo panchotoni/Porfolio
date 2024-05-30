@@ -1,0 +1,40 @@
+.tituloEdu {
+    margin: 60px; // Agrega un margen en la parte superior del título
+    text-align: center; // Centra el texto horizontalmente
+}
+
+.educacionSec {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+hr {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.educacionArt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; // Centra las imágenes horizontalmente
+    align-items: center; // Centra las imágenes verticalmente
+    margin: 65px;
+    
+    h2 {
+        margin-bottom: 10px; // Añade un margen inferior al h2
+    }
+}
+
+
+.eduLogos {
+    max-width: 200px; // Establece el ancho máximo
+    height: auto; // Permite que la altura se ajuste proporcionalmente
+    display: block; // Asegura que las imágenes se muestren como bloques
+    margin: 0 auto;
+    transition: all 0.5s;
+
+    &:hover{
+        transform: scale(1.2, 1.2);
+    }
+        
+}

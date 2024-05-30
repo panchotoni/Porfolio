@@ -1,0 +1,97 @@
+.containerMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 2.3fr 1fr 1fr 0.2fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . . ."
+      ". artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 ."
+      ". artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 artiucloPrincipal1 ."
+      ". . . . . . . . ."
+      ". . Section1 Section1 . Section2 Section2 . ."
+      ". . Section1 Section1 . Section2 Section2 . ."
+      ". . . . . . . . ."
+      ". . Section3 Section3 . Section4 Section4 . ."
+      ". . Section3 Section3 . Section4 Section4 . ."
+      ". . . . . . . . .";
+
+    .artiucloPrincipal1{
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row-reverse;
+        grid-area: artiucloPrincipal1; 
+
+        .textoArt {
+            width: 650px;
+            padding-top: 15px;
+        }
+
+        .pprincipal {
+            padding: 10px;
+            text-align: start;
+        }
+
+        
+        .imagenYo {
+            width: 250px;
+        }
+
+    }
+    
+    .Section1, .Section2, .Section3, .Section4{
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 300;
+
+        &:nth-of-type(1) {
+            grid-area: Section1;
+        }
+        
+        &:nth-of-type(2) {
+            grid-area: Section2;
+        }
+        
+          &:nth-of-type(3) {
+        grid-area: Section3;
+        }
+        
+          &:nth-of-type(4) {
+        grid-area: Section4;
+        }
+
+        .cardText {
+            font-weight: 400;
+        }
+
+        .cardImage{
+            transition: all 0.5s;
+
+            &:hover{
+                transform: scale(1.1, 1.1);
+            }
+        }
+
+        .cardsLabel {
+            display: flex;
+            gap: 7px;
+            margin-top: 15px;
+            font-size: 13px;
+
+            .tags{
+                background: rgb(189, 217, 243);
+                border-radius: 11%;
+                padding: 2px;
+                transition: all 0.5s;
+
+                &:hover{
+                    transform: scale(1.1, 1.1);
+                }
+            }
+        }
+    }
+}
