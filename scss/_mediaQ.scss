@@ -1,10 +1,37 @@
 /* MEDIA QUERIES*/
 @media (max-width: 768px) {
     .indexNav {
-        gap: 5px;
-
+        flex-direction: column;
+        gap: 15px;
+    
+        .logo {
+            img {
+                margin-left: -30px;
+            }
+        }
+    
         .menu {
-            padding-right: 1%;
+            flex-direction: column;
+            padding-right: none;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            width: 100%;
+
+            .item{
+    
+                width: 70%;
+
+                .link{
+                    color: white;
+                    background-color: rgb(13, 110, 253);
+                    border-radius: 10px;
+                    display: block;
+                    text-align: center;
+        
+                }
+            }
         }
     }
     .contactNav {
